@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مختصر الروابط</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <section class="top-banner">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80" alt="Banner">
+        <div class="banner-overlay">
+            <h1>مختصر الروابط</h1>
+        </div>
+    </section>
+
+    <!-- المحتوى -->
+    <main class="main-wrapper">
+        <section class="shortener-box">
+
+            <div class="row-box">
+                <button class="btn-generate" onclick="shortenUrl()">توليد</button>
+                <input type="text" id="urlInput" placeholder="اضف الرابط هنا">
+            </div>
+
+            <div class="row-box">
+                <button class="btn-copy" onclick="copyGeneratedLink()">نسخ</button>
+                <input type="text" id="shortUrlOutput" placeholder="رابط بعد التوليد" readonly>
+            </div>
+
+            <div id="messageBox" class="message-box"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
